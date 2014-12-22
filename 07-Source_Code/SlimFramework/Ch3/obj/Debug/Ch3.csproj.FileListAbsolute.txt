@@ -1,0 +1,13 @@
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\bin\Debug\Ch3.exe.config
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\obj\Debug\Ch3.csprojResolveAssemblyReference.cache
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\obj\Debug\Ch3.Properties.Resources.resources
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\obj\Debug\Ch3.csproj.GenerateResource.Cache
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\bin\Debug\Ch3.exe
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\bin\Debug\Ch3.pdb
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\bin\Debug\SlimDX.dll
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\bin\Debug\SlimFramework.dll
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\bin\Debug\SlimFramework.pdb
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\bin\Debug\SlimDX.pdb
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\bin\Debug\SlimDX.xml
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\obj\Debug\Ch3.exe
+D:\Thesis\git\07-Source_Code\SlimFramework\Ch3\obj\Debug\Ch3.pdb
