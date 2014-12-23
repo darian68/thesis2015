@@ -1,0 +1,9 @@
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\TUT1\obj\Debug\ResolveAssemblyReference.cache
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\TUT1\obj\Debug\TUT1.Form1.resources
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\TUT1\obj\Debug\TUT1.Properties.Resources.resources
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\TUT1\obj\Debug\TUT1.csproj.GenerateResource.Cache
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\TUT1\bin\Debug\TUT1.exe
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\TUT1\bin\Debug\TUT1.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\TUT1\obj\Debug\TUT1.exe
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\TUT1\obj\Debug\TUT1.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\TUT1\bin\Debug\triangle.fx

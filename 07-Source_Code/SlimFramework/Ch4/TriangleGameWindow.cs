@@ -94,10 +94,11 @@ namespace Ch4
             // Create the SwapChain and check for errors.
             if (SlimDX.Direct3D11.Device.CreateWithSwapChain(DriverType.Hardware,
                                                          DeviceCreationFlags.Debug,
-                                                         new FeatureLevel[] { FeatureLevel.Level_11_0 },
+                                                         //new FeatureLevel[] { FeatureLevel.Level_11_0 },
                                                          swapChainDesc,
                                                          out m_Device,
                                                          out m_SwapChain).IsFailure)
+
             {
                 // An error has occurred.  Initialization of the Direct3D device has failed for some reason.
                 return;
@@ -147,7 +148,7 @@ namespace Ch4
         {
             // Load and compile the vertex shader
             string vsCompileError = "Vertex Shader Compile Error!!!";
-            using (var bytecode = ShaderBytecode.CompileFromFile("Effects.fx",
+            using (var bytecode = ShaderBytecode.CompileFromFile("D:/000-Thesis/01-GIT/07-Source_Code/SlimFramework/Ch4/effects.fx",
                                                                  "Vertex_Shader",
                                                                  "vs_4_0",
                                                                  ShaderFlags.Debug,
@@ -163,7 +164,7 @@ namespace Ch4
 
             // Load and compile the pixel shader
             string psCompileError = "Pixel Shader Compile Error!!!";
-            using (var bytecode = ShaderBytecode.CompileFromFile("Effects.fx",
+            using (var bytecode = ShaderBytecode.CompileFromFile("D:/000-Thesis/01-GIT/07-Source_Code/SlimFramework/Ch4/effects.fx",
                                                                  "Pixel_Shader",
                                                                  "ps_4_0",
                                                                  ShaderFlags.Debug,

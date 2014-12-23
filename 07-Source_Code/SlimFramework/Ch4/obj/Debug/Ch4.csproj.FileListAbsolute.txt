@@ -11,3 +11,16 @@ D:\Thesis\git\07-Source_Code\SlimFramework\Ch4\obj\Debug\Ch4.Properties.Resource
 D:\Thesis\git\07-Source_Code\SlimFramework\Ch4\obj\Debug\Ch4.csproj.GenerateResource.Cache
 D:\Thesis\git\07-Source_Code\SlimFramework\Ch4\obj\Debug\Ch4.exe
 D:\Thesis\git\07-Source_Code\SlimFramework\Ch4\obj\Debug\Ch4.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\bin\Debug\Ch4.exe.config
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\obj\Debug\Ch4.exe
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\obj\Debug\Ch4.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\bin\Debug\Ch4.exe
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\bin\Debug\Ch4.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\bin\Debug\SlimDX.dll
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\bin\Debug\SlimFramework.dll
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\bin\Debug\SlimFramework.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\bin\Debug\SlimDX.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\bin\Debug\SlimDX.xml
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\obj\Debug\Ch4.csprojResolveAssemblyReference.cache
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\obj\Debug\Ch4.Properties.Resources.resources
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\Ch4\obj\Debug\Ch4.csproj.GenerateResource.Cache

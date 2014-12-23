@@ -16,5 +16,11 @@ namespace MotionPlayer
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Skeleton ske = new Skeleton();
+            ske.ReadASFFile("D:/000-Thesis/01-GIT/07-Source_Code/SlimFramework/MotionPlayer/143.asf", Constants.MOCAP_SCALE);
+        }
     }
 }

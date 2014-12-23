@@ -8,14 +8,14 @@ namespace MotionPlayer
 {
     public class Bone
     {
-        private Bone sibling;
-        public Bone Sibling
+        private int sibling;
+        public int Sibling
         {
             get { return sibling; }
             set { sibling = value; }
         }
-        private Bone child;
-        public Bone Child
+        private int child;
+        public int Child
         {
             get { return child; }
             set { child = value; }
@@ -30,7 +30,12 @@ namespace MotionPlayer
         public double[] Direction
         {
             get { return direction; }
-            set { direction = value; }
+            set
+            { 
+                direction[0] = value[0];
+                direction[1] = value[1];
+                direction[2] = value[2];
+            }
         }
         private double length;
         public double Length
@@ -117,11 +122,7 @@ namespace MotionPlayer
         }
 
         private double[,] rotParentCurrent = new double[4, 4];
-        public double[,] RotParentCurrent
-        {
-            get { return rotParentCurrent; }
-            set { rotParentCurrent = value; }
-        }
+        
         private double rx, ry, rz;
         public double Rx
         {
@@ -161,10 +162,9 @@ namespace MotionPlayer
             set { tl = value; }
         }
         private int[] dofo = new int[8];
-        public int[] Dofo
+        
+        public Bone()
         {
-            get { return dofo; }
-            set { dofo = value; }
         }
     }
 }

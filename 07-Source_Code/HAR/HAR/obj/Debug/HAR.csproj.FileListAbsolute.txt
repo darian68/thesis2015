@@ -5,3 +5,10 @@ D:\000-Thesis\07-Source_Code\HAR\HAR\bin\Debug\HAR.exe
 D:\000-Thesis\07-Source_Code\HAR\HAR\bin\Debug\HAR.pdb
 D:\000-Thesis\07-Source_Code\HAR\HAR\obj\Debug\HAR.exe
 D:\000-Thesis\07-Source_Code\HAR\HAR\obj\Debug\HAR.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\HAR\obj\Debug\HAR.exe
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\HAR\obj\Debug\HAR.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\HAR\bin\Debug\HAR.exe
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\HAR\bin\Debug\HAR.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\HAR\obj\Debug\ResolveAssemblyReference.cache
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\HAR\obj\Debug\HAR.Properties.Resources.resources
+D:\000-Thesis\01-GIT\07-Source_Code\HAR\HAR\obj\Debug\HAR.csproj.GenerateResource.Cache

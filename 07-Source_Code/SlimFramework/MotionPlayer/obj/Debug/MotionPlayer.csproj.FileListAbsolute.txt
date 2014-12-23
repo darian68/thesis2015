@@ -1,0 +1,9 @@
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\MotionPlayer\bin\Debug\MotionPlayer.exe.config
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\MotionPlayer\bin\Debug\MotionPlayer.exe
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\MotionPlayer\bin\Debug\MotionPlayer.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\MotionPlayer\obj\Debug\MotionPlayer.csprojResolveAssemblyReference.cache
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\MotionPlayer\obj\Debug\MotionPlayer.Form1.resources
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\MotionPlayer\obj\Debug\MotionPlayer.Properties.Resources.resources
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\MotionPlayer\obj\Debug\MotionPlayer.csproj.GenerateResource.Cache
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\MotionPlayer\obj\Debug\MotionPlayer.exe
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\MotionPlayer\obj\Debug\MotionPlayer.pdb

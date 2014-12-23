@@ -6,7 +6,7 @@ namespace HAR
     {
         static void Main()
         {
-            var form = new RenderForm("Tutorial 1: Basic Window");
+            var form = new RenderForm("Human Activity Recognition");
             MessagePump.Run(form, () => { });
         }
     }

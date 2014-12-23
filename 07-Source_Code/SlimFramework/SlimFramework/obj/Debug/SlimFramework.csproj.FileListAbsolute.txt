@@ -6,3 +6,11 @@ D:\Thesis\git\07-Source_Code\SlimFramework\SlimFramework\bin\Debug\SlimDX.xml
 D:\Thesis\git\07-Source_Code\SlimFramework\SlimFramework\obj\Debug\SlimFramework.csprojResolveAssemblyReference.cache
 D:\Thesis\git\07-Source_Code\SlimFramework\SlimFramework\obj\Debug\SlimFramework.dll
 D:\Thesis\git\07-Source_Code\SlimFramework\SlimFramework\obj\Debug\SlimFramework.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\SlimFramework\bin\Debug\SlimFramework.dll
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\SlimFramework\bin\Debug\SlimFramework.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\SlimFramework\bin\Debug\SlimDX.dll
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\SlimFramework\bin\Debug\SlimDX.pdb
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\SlimFramework\bin\Debug\SlimDX.xml
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\SlimFramework\obj\Debug\SlimFramework.csprojResolveAssemblyReference.cache
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\SlimFramework\obj\Debug\SlimFramework.dll
+D:\000-Thesis\01-GIT\07-Source_Code\SlimFramework\SlimFramework\obj\Debug\SlimFramework.pdb
