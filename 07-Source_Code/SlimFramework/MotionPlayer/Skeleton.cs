@@ -58,11 +58,11 @@ namespace MotionPlayer
             set { rootBone = value; }
         }
         private Bone[] listBone = new Bone[Constants.MAX_BONE];
-        public Bone GetBoneByIdx(int index)
+        public Bone GetBoneById(int index)
         {
             for (int i = 0; i < listBone.Length; i++)
             {
-                if (listBone[i].Idx == index) return listBone[i];
+                if (listBone[i].Id == index) return listBone[i];
             }
             return null;
         }
@@ -70,22 +70,33 @@ namespace MotionPlayer
         {
             return listBone.Length;
         }
-        public int Name2Idx(string name)
+        public int Name2Id(string name)
         {
             for (int i = 0; i < listBone.Length; i++)
             {
                 if (string.Compare(listBone[i].Name, name) == 0)
                 {
-                    return listBone[i].Idx;
+                    return listBone[i].Id;
                 }
             }
             return 0;
         }
-        public string Idx2Name(int idx)
+        public int Name2Index(string name)
         {
             for (int i = 0; i < listBone.Length; i++)
             {
-                if (listBone[i].Idx == idx) return listBone[i].Name;
+                if (string.Compare(listBone[i].Name, name) == 0)
+                {
+                    return i;
+                }
+            }
+            return 0;
+        }
+        public string Id2Name(int id)
+        {
+            for (int i = 0; i < listBone.Length; i++)
+            {
+                if (listBone[i].Id == id) return listBone[i].Name;
             }
             return String.Empty;
         }
@@ -120,9 +131,8 @@ namespace MotionPlayer
                 listBone[i].Doftx = 0;
                 listBone[i].Dofty = 0;
                 listBone[i].Doftz = 0;
-                listBone[i].Doftl = 0;
-                listBone[i].Sibling = 0;
-                listBone[i].Child = 0;
+                listBone[i].Doftl = 0; 
+                listBone[i].Parent = -1;
                 // Loop for each bone
                 while (true)
                 {
@@ -146,7 +156,7 @@ namespace MotionPlayer
                     // id of bone
                     if (String.Compare(keyword, "id") == 0)
                     {
-                        listBone[i].Idx = Int32.Parse(data);
+                        listBone[i].Id = Int32.Parse(data);
                     }
                     // name of bone
                     if (String.Compare(keyword, "name") == 0)
@@ -166,7 +176,7 @@ namespace MotionPlayer
                     // length
                     if (String.Compare(keyword, "length") == 0)
                     {
-                        listBone[i].Length = double.Parse(data);
+                        listBone[i].Length = double.Parse(data) * scale;
                     }
                     // axis
                     if (String.Compare(keyword, "axis") == 0)
@@ -202,8 +212,45 @@ namespace MotionPlayer
                     }
                 }
             }
+            string[] hierarchy;
+            int parent = -1, index;
+            while (true)
+            {
+                read = s.ReadLine().Trim();
+                if (String.Compare(read, "begin") == 0)
+                {
+                    continue;
+                }
+                if (String.Compare(read, "end") == 0)
+                {
+                    break;
+                }
+                else
+                {
+                    hierarchy = read.Split(' ');
+                    for (int i = 0; i < hierarchy.Length; i++)
+                    {
+                        if (i == 0)
+                        {
+                            parent = Name2Id(hierarchy[i]);
+                        }
+                        else
+                        {
+                            index = Name2Index(hierarchy[i]);
+                            listBone[index].Parent = parent;
+                        }
+                    }
+                }
+            }
             s.Close();
-            return 0;
+            return 1;
+        }
+        public Skeleton(string asfFileName, double scale)
+        {
+            listBone[0] = new Bone();
+            listBone[0].Name = "root";
+            listBone[0].Id = 0;
+            ReadASFFile(asfFileName, scale);
         }
     }
 }

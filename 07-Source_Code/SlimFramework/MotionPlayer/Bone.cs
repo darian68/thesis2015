@@ -8,23 +8,17 @@ namespace MotionPlayer
 {
     public class Bone
     {
-        private int sibling;
-        public int Sibling
+        private int parent;
+        public int Parent
         {
-            get { return sibling; }
-            set { sibling = value; }
+            get { return parent; }
+            set { parent = value; }
         }
-        private int child;
-        public int Child
+        private int id;
+        public int Id
         {
-            get { return child; }
-            set { child = value; }
-        }
-        private int idx;
-        public int Idx
-        {
-            get { return idx; }
-            set { idx = value; }
+            get { return id; }
+            set { id = value; }
         }
         private double[] direction = new double[3];
         public double[] Direction
@@ -165,6 +159,7 @@ namespace MotionPlayer
         
         public Bone()
         {
+            parent = -1;
         }
     }
 }
