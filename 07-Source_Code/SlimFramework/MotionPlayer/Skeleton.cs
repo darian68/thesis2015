@@ -51,6 +51,12 @@ namespace MotionPlayer
             get { return rz; }
             set { rz = value; }
         }
+        private int moveBones;
+        public int MoveBones
+        {
+            get { return moveBones; }
+            set { moveBones = value; }
+        }
         private Bone rootBone;
         public Bone RootBone
         {
@@ -133,6 +139,7 @@ namespace MotionPlayer
                 listBone[i].Doftz = 0;
                 listBone[i].Doftl = 0; 
                 listBone[i].Parent = -1;
+                moveBones++;
                 // Loop for each bone
                 while (true)
                 {
@@ -147,6 +154,7 @@ namespace MotionPlayer
                     }
                     if (String.Compare(read, ":hierarchy") == 0)
                     {
+                        moveBones = moveBones - 1;
                         // Stop here
                         done = true;
                         break;
@@ -191,7 +199,8 @@ namespace MotionPlayer
                     if (String.Compare(keyword, "dof") == 0)
                     {
                         stringArray = data.Split(' ');
-                        for (int j= 0; j < stringArray.Length; j++)
+                        listBone[i].Dof = 0;
+                        for (int j = 0; j < stringArray.Length; j++)
                         {
                             if (String.Compare(stringArray[j], "rx") == 0) {
                                 listBone[i].Dofrx = 1;
@@ -208,8 +217,13 @@ namespace MotionPlayer
                             } else if (String.Compare(stringArray[j], "l") == 0) {
                                 listBone[i].Doftl = 1;
                             }
+                            listBone[i].Dof = listBone[i].Dof + 1;
                         }
                     }
+                }
+                if (listBone[i].Dofrx == 0 && listBone[i].Dofry == 0 && listBone[i].Dofrz == 0)
+                {
+                    moveBones = moveBones - 1;
                 }
             }
             string[] hierarchy;
@@ -250,6 +264,19 @@ namespace MotionPlayer
             listBone[0] = new Bone();
             listBone[0].Name = "root";
             listBone[0].Id = 0;
+            // Dof
+            listBone[0].Dof = 6;
+            listBone[0].Dofrx = 1;
+            listBone[0].Dofry = 1;
+            listBone[0].Dofrz = 1;
+            listBone[0].Doftx = 1;
+            listBone[0].Dofty = 1;
+            listBone[0].Doftz = 1;
+            // Root position
+            rootPosition[0] = 0;
+            rootPosition[1] = 0;
+            rootPosition[2] = 0;
+            moveBones = 1;
             ReadASFFile(asfFileName, scale);
         }
     }
